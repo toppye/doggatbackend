@@ -8,6 +8,9 @@ public class DoggatApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DoggatApplication.class, args);
+
+		MyFirstClass myFirstClass = new MyFirstClass();
+		 System.out.println(myFirstClass.SayHello());
 	}
 
 }
