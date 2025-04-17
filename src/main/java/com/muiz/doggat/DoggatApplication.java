@@ -14,8 +14,8 @@ public class DoggatApplication {
 		System.out.println(myFirstClass.SayHello());
 	}
 
-	@Bean
-	public MyFirstClass myFirstClass() {
-		return new MyFirstClass();
-	}
+//	@Bean
+//	public MyFirstClass myFirstClass() {
+//		return new MyFirstClass();
+//	}
 }
