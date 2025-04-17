@@ -10,12 +10,8 @@ public class DoggatApplication {
 	public static void main(String[] args) {
 		var ctx = SpringApplication.run(DoggatApplication.class, args);
 
-		MyFirstClass myFirstClass = ctx.getBean(MyFirstClass.class);
-		System.out.println(myFirstClass.SayHello());
-	}
 
-//	@Bean
-//	public MyFirstClass myFirstClass() {
-//		return new MyFirstClass();
-//	}
+		FirstClassTest firstClassTest = ctx.getBean(FirstClassTest.class);
+		System.out.println(firstClassTest.SayHello());
+	}
 }
