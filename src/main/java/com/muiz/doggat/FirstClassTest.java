@@ -1,10 +1,14 @@
 package com.muiz.doggat;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class FirstClassTest {
+
+    private String myVar;
+
+    public FirstClassTest(String myVar) {
+        this.myVar = myVar;
+    }
+
     public String SayHello(){
-        return "Hello from FirstClassTest";
+        return "Hello from FirstClassTest ==> " + myVar;
     }
 }
