@@ -17,7 +17,7 @@ public class ApplicationConfig {
         return new FirstClassTest("my second beans");
     }
 
-    @Bean
+      @Bean
     public FirstClassTest thirdClassTest() {
         return new FirstClassTest("my third beans");
     }

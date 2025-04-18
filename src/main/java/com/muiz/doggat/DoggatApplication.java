@@ -13,5 +13,7 @@ public class DoggatApplication {
 
 		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
 		System.out.println(myFirstService.SayFirstservice());
+		System.out.println(myFirstService.getjavaversion());
+		System.out.println(myFirstService.osversion());
 	}
 }
