@@ -7,9 +7,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyFirstService {
 
+    private FirstClassTest firstClassTest;
 
     @Autowired
-    private FirstClassTest firstClassTest;
+    public void setFirstClassTest(
+            @Qualifier("bean1") FirstClassTest firstClassTest
+    ){
+        this.firstClassTest = firstClassTest;
+    }
 
 //    public MyFirstService(@Qualifier("1") FirstClassTest firstClassTest) {
 //        this.firstClassTest = firstClassTest;
