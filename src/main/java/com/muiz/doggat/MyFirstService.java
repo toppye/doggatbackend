@@ -9,7 +9,7 @@ public class MyFirstService {
 
     private final FirstClassTest firstClassTest;
 
-    public MyFirstService(FirstClassTest firstClassTest) {
+    public MyFirstService(@Qualifier("1") FirstClassTest firstClassTest) {
         this.firstClassTest = firstClassTest;
     }
 

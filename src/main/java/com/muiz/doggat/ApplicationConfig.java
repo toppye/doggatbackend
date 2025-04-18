@@ -8,12 +8,13 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class ApplicationConfig {
     @Bean
+    @Qualifier("1")
     public FirstClassTest firstClassTest() {
         return new FirstClassTest("First beans or 12345");
     }
 
     @Bean
-    @Primary
+    @Qualifier("2")
     public FirstClassTest secondClassTest() {
         return new FirstClassTest("my second beans");
     }
