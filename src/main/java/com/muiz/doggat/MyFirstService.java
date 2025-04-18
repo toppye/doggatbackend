@@ -1,5 +1,6 @@
 package com.muiz.doggat;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
