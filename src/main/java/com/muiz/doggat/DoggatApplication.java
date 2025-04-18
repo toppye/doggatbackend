@@ -8,13 +8,7 @@ import org.springframework.context.annotation.Bean;
 public class DoggatApplication {
 
 	public static void main(String[] args) {
-		var ctx = SpringApplication.run(DoggatApplication.class, args);
-
-
-		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
-		System.out.println(myFirstService.SayFirstservice());
-		System.out.println(myFirstService.getjavaversion());
-		System.out.println(myFirstService.osversion());
-		System.out.println(myFirstService.readprop());
+		SpringApplication.run(DoggatApplication.class, args);
+		System.out.println("DoggatApplication started");
 	}
 }
