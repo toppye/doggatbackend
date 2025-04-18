@@ -31,6 +31,10 @@ public class MyFirstService {
         return environment.getProperty("os.version");
     }
 
+    public String readprop(){
+        return environment.getProperty("spring.application.name");
+    }
+
     @Autowired
     public void setEnvironment(Environment environment) {
         this.environment = environment;

@@ -15,5 +15,6 @@ public class DoggatApplication {
 		System.out.println(myFirstService.SayFirstservice());
 		System.out.println(myFirstService.getjavaversion());
 		System.out.println(myFirstService.osversion());
+		System.out.println(myFirstService.readprop());
 	}
 }
