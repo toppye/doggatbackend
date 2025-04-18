@@ -11,7 +11,7 @@ public class DoggatApplication {
 		var ctx = SpringApplication.run(DoggatApplication.class, args);
 
 
-		FirstClassTest firstClassTest = ctx.getBean(FirstClassTest.class);
-		System.out.println(firstClassTest.SayHello());
+		MyFirstService myFirstService = ctx.getBean(MyFirstService.class);
+		System.out.println(myFirstService.SayFirstservice());
 	}
 }
