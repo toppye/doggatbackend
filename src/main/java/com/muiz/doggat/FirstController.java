@@ -38,6 +38,12 @@ public class FirstController {
         return "this is the path variable : " + User_name;
     }
 
-
-
+    //localhost:8080/param?user-name=toppye&last-name=myname
+    @GetMapping("/param")
+    public String param(
+            @RequestParam("user-name") String userName,
+            @RequestParam("last-name") String lastName
+    ){
+        return "request params are --> " + userName + " " + lastName;
+    }
 }
