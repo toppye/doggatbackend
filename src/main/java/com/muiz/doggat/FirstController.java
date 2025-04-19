@@ -10,11 +10,27 @@ public class FirstController {
         return "hello from my first controller";
     }
 
-    @PostMapping("/post")
-    public String post(
-           @RequestBody Order order
+    @PostMapping("/orderrecord")
+    public String orderrecord(
+           @RequestBody Order_record order
     ){
         return "The message from my first controller : " + order.toString();
     }
+
+    @PostMapping("/post/order")
+    public String postorder(
+            @RequestBody Order order
+    ){
+        return "The message from my first controller : " + order.toString();
+    }
+
+    @PostMapping("/post")
+    public String post(
+            @RequestBody String message
+    ){
+        return "The message from my first controller : " + message;
+    }
+
+
 
 }
