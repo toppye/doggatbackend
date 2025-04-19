@@ -31,6 +31,13 @@ public class FirstController {
         return "The message from my first controller : " + message;
     }
 
+    @GetMapping("/pathvar/{user-name}")
+    public String pathvar(
+            @PathVariable("user-name") String User_name
+    ){
+        return "this is the path variable : " + User_name;
+    }
+
 
 
 }
