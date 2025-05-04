@@ -1,8 +1,8 @@
 
 Spring:
   datasource:
-    url: jdbc:postgresql://0.0.0.0:5433/demo_db
-    username: postgres
+    url: jdbc:postgresql://127.0.0.1:5432/mydb1
+    username: MUIZ
     password: aremucoding
     driver-class-name: org.postgresql.Driver
   jpa:
@@ -13,3 +13,4 @@ Spring:
       hibernate:
         format_sql: true
     database: postgresql
+
